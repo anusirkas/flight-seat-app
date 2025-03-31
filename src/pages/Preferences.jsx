@@ -30,10 +30,10 @@ function Preferences() {
 
   return (
     <div className="p-8 max-w-xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Your preferences 🧾</h2>
+      <h2 className="text-2xl font-bold mb-4">Your preferences: </h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block mb-1 font-medium">How many persons are travelling?</label>
+          <label className="block mb-1 font-medium">How many people are travelling?</label>
           <input
             type="number"
             min="1"

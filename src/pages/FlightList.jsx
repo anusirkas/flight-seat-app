@@ -33,7 +33,7 @@ function FlightList() {
 
   return (
     <div className="p-8 max-w-3xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-center">Vali lend ✈️</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">Choose a flight ✈️</h1>
       <ul className="space-y-4">
         {mockFlights.map((flight) => (
           <li
@@ -45,13 +45,13 @@ function FlightList() {
               <p className="text-sm text-gray-500">
                 {flight.date} – {flight.time}
               </p>
-              <p className="text-sm text-gray-700">Hind: €{flight.price}</p>
+              <p className="text-sm text-gray-700">Price: €{flight.price}</p>
             </div>
             <button
               onClick={() => handleSelect(flight.id)}
               className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
             >
-              Vali
+              Choose
             </button>
           </li>
         ))}
