@@ -1,26 +1,56 @@
-# ✈️ Flight Seat Planner – CGI Summer Internship 2025 Task
+# ✈️ Flight Seat Planner – CGI suvepraktika 2025 proovitöö
 
-A web application that allows users to select a flight, define their seat preferences, and receive personalized seat recommendations visually on an aircraft seat map.
-
-## 🔧 Tech Stack
-- React
-- TailwindCSS
-- React Router
-- (Coming later: Spring Boot REST API)
-
-## ✅ Project Status
-- ✅ Project setup complete
-- ✅ TailwindCSS and routing working
-- ✅ Flight list page implemented
-- 🔧 Preferences page in progress
-- ⬜ Seat recommendation logic and visual seat map coming soon
-
-## 📌 Notes
-This project is part of my learning journey. I'm using ChatGPT as a mentor to help me understand and build the solution. All code has been written and customized by me, with explanations and learning in mind.
+Veebirakendus, mis võimaldab kasutajal:
+- valida sobiva lennu
+- sisestada reisijate arv
+- määrata istekoha eelistused (akna all, rohkem jalaruumi, istmed koos, väljapääsule lähemal)
+- näha visuaalselt soovitatud istekohti lennuki plaanil
 
 ---
 
-## 🚀 How to run
+## 🔧 Tehnoloogiad
+- React
+- Vite
+- TailwindCSS
+- React Router
+- (Tulevikus: Spring Boot REST API)
+
+---
+
+## ✅ Projekti seis
+- ✅ Projekti struktuur ja seadistus tehtud
+- ✅ Routing töötab
+- ✅ Lennuvaliku vaade valmis (mock andmed)
+- ✅ Eelistuste vorm töötab ja suunab edasi
+- ✅ Istekohtade leht tehtud
+- ✅ Deploy tehtud Verceliga
+- ⬜ Istekohtade plaani visuaaliga jäin toppama (hõivatud, soovitatud, vabad kohad)
+- ⬜ Üleüldine UI võiks parem olla
+- ⬜ Docker konteiner jäi seekord tegemata
+
+---
+
+## 💬 Märkused ja õpikohad
+
+See proovitöö oli minu jaoks suur õppimise võimalus. Olen õppinud front-end arendust alles ~5 kuud, seega oli see esimene kord, kus püüdsin teha midagi täismahus — koos disaini, navigeerimise ja komponentide ülesehitusega.
+
+### Mis sain tehtud:
+- Lendude list koos mock-andmetega
+- Kasutaja eelistuste sisestamine ja haldamine URL query stringide kaudu
+- Lennuki istekohtade visuaalne esitlus (hõivatud/sobivad)
+- Vercel deploy
+- GitHub versioonihaldus
+
+### Mis oli keeruline:
+- Tailwindi seadistamine Vite projektis — versioon 4 tõi kaasa uusi muudatusi, mis ei sobinud varasema PostCSS konfiguratsiooniga. Tekkinud konfliktid takistasid Tailwindi klasside rakendumist ka pärast mitmeid parandusi. Proovisin isegi GitHubist malli kloonida (https://github.com/theodorusclarence/vite-react-tailwind-starter), kuid probleemid püsisid. Proovisin terve päeva ainuüksi seda probleemi lahendada, aga ei saanud hakkama.
+- Docker jäi seekord ajapuuduse tõttu tegemata
+
+### Kuidas õppisin:
+Kasutasingi seda projekti kui õppimise võimalust. Kasutasin ChatGPT abi nagu mentorit, et saada aru erinevatest tehnilistest sammudest, mitte lihtsalt kopeerida. Kogu kood on ise kirjutatud, testitud ja kohandatud. Isegi kui midagi jäi poolikuks, sain väga palju juurde arusaamises, kuidas rakendused toimivad. Ma polnud elus varem ka Tailwind CSS-i kasutanud. Positiivse noodina kasvatas see mu huvi koodimise osas veelgi enam ja tahan ikkagi selle projekti lõpuni ära teha.
+
+---
+
+## 🚀 Kuidas käivitada lokaalselt
 
 ```bash
 npm install
