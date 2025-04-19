@@ -1,4 +1,4 @@
-# ✈️ Flight Seat Planner – CGI suvepraktika 2025 proovitöö
+# ✈️ Flight Seat Planner
 
 Veebirakendus, mis võimaldab kasutajal:
 - valida sobiva lennu
